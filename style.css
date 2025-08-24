@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.container
+{
+    background-color: hsl(0, 0%, 70%);
+    border: none;
+    padding: 20px;
+    max-width: 400px;
+}
+#display
+{
+    width: 90%;
+    height: 50px;
+    background-color: rgb(136, 136, 134);
+    border: none;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#display::placeholder
+{
+    color: white;
+}
+.keys
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+button
+{
+    padding: 15px 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 35%);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.15s;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 55%);
+}
+.operator
+{
+    background-color: hsla(68, 54%, 65%, 0.645);
+}
+.operator:hover
+{
+    background-color: hsla(68, 54%, 75%, 0.645);
+}
+.operator:active
+{
+    background-color: hsla(68, 54%, 95%, 0.645);
+}
+.operator-equal
+{
+    background-color: hsl(300, 33%, 60%);
+}
+.operator-equal:hover
+{
+    background-color: hsl(300, 33%, 65%);
+}
+.operator-equal
+{
+    background-color: hsl(300, 33%, 70%);
+}
